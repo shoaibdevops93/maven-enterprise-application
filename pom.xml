@@ -14,9 +14,24 @@
   
   <properties>
 	<!-- versions -->
-	<sonar.host.url>http://localhost:9000/</sonar.host.url>
+	<sonar.host.url>http://43.204.25.23:9000/</sonar.host.url>
+	<sonar.login>squ_ffc0f6627eabd8c189997790669af05d4439f648</sonar.login>
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 </properties>
-  
+    <distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <url>http://35.154.43.219:9980/mithuntechnology/repository/ICICI-Release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <url>http://35.154.43.219:9980/mithuntechnology/repository/icici-snap/</url>
+	    </snapshotRepository>
+	    
+      </distributionManagement>
 </project>
